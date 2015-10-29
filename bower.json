@@ -1,0 +1,21 @@
+{
+  "name": "collaborative",
+  "version": "0.0.1",
+  "authors": [
+    "rodrigo <rodrigorozendobastos@gmail.com>"
+  ],
+  "description": "Sistema colaborativo",
+  "main": "cluster_app.js",
+  "license": "None",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ui-router": "~0.2.15",
+    "angularjs": "~1.4.7"
+  }
+}
