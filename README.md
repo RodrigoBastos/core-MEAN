@@ -1,0 +1,2 @@
+# core-MEAN
+MEAN Project
