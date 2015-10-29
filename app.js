@@ -12,7 +12,7 @@ function App () {
   return express()
 
     // Express configuration
-    .set('port', 4800)
+    .set('port', 4900)
     .set('view engine', 'jade')
     .set('views', path.join(__dirname, 'client', 'views'))
 
