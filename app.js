@@ -12,7 +12,7 @@ function App () {
   return express()
 
     // Express configuration
-    .set('port', 4900)
+    .set('port', 4100)
     .set('view engine', 'jade')
     .set('views', path.join(__dirname, 'client', 'views'))
 
@@ -21,5 +21,6 @@ function App () {
     .use(mainRoutes)
   ;
 }
+
 
 module.exports = App;

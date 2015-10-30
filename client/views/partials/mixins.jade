@@ -1,0 +1,38 @@
+//
+   Created by Rodrigo Bastos on 30/10/15.
+
+mixin topbar(type)
+  .nav-wrapper.scrolled(ng-cloak)
+    .row
+      nav.top-bar(data-topbar='', role='navigation')
+        ul.title-area
+          li.name
+            h1
+              a#bt-navbar-home(href='/')
+                img(src='/images/brand/brand.svg')
+
+          li.toggle-topbar.menu-icon
+            a(href='#')
+              span Menu
+
+
+        section.top-bar-section
+
+          // Right Nav Section
+          if type == 'userPanel'
+            ul.right
+              li.has-dropdown
+                a(href="#")
+                  img.navbar-user-icon(src='/images/user/default.png')
+                  | Rodrigo Bastos
+                ul.dropdown
+                  li: a(ui-sref='info') info
+                  li: a(ui-sref='home') home
+
+
+          if type == 'userLogin'
+            ul.right
+              li.has-form(ui-sref-active="active")
+                a#bt-navbar-assinar.button.radius(ui-sref="signup") 'Criar Conta'
+              li(ui-sref-active="active")
+                a#bt-navbar-entrar(ui-sref="login") 'Entrar'

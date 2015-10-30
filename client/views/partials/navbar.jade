@@ -1,0 +1,45 @@
+.nav-wrapper.scrolled
+  .row
+    nav.top-bar(data-topbar='', role='navigation')
+
+      ul.title-area
+        li.name
+          h1
+            a#bt-navbar-home(href='/')
+              img(src='/images/brand/brand.svg')
+        li.toggle-topbar.menu-icon
+          a(href='#')
+            span
+
+
+      section.top-bar-section
+        // Right Nav Section
+        //-ul.left
+          li: a#bt-entrar(href="/")= __("Entrar")
+          li: a#bt-criarconta(href="/signup")= __("Criar Conta")
+
+        ul.right
+
+          if user
+            li: img.navbar-user-icon(src='/images/user/default.png')
+            li.has-dropdown
+              a(href="#") #{user.name}
+              ul.top-bar-dropdown
+                li: a(href="/profile") 'Meus Dados'
+                li.divider
+                li: a(href="/logout") 'Sair'
+
+          else
+            li.has-form
+              a#bt-navbar-assinar.button.radius(href='/signup') Criar Conta
+            li
+              a#bt-navbar-entrar(href='/')= 'Entrar'
+
+          //-li.has-dropdown
+            a(href='#') #{locale}
+            ul.dropdown
+              for l in locales
+                li: a#bt-mudarlingua(href='/setlocale/#{l}') #{l}
+                  if locale == l
+                    span.fa.fa-fw.fa-check
+

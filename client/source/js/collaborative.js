@@ -5,6 +5,7 @@
 //AngularJS
 //= include ../components/angular/angular.js
 //= include ../components/angular-ui-router/release/angular-ui-router.js
+//= include ../components/angular-foundation/mm-foundation.js
 
 // App Specific
 //= include partials/collaborative-routes.js
@@ -17,7 +18,9 @@
 
     // App Specific
     'application.routes',
-    'application.controllers'
+    'application.controllers',
+
+    'mm.foundation'
 
   ]);
 })();
