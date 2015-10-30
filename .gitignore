@@ -3,3 +3,6 @@
 *.iml
 out
 gen
+
+#Bower Components
+client/source/components

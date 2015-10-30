@@ -4,13 +4,20 @@
 
 //AngularJS
 //= include ../components/angular/angular.js
-//= include ../components/ui-router/release/angular-ui-router.js
+//= include ../components/angular-ui-router/release/angular-ui-router.js
 
-//App Angularjs
+// App Specific
 //= include partials/collaborative-routes.js
 //= include partials/collaborative-controllers.js
 
 
 (function () {
-  angular.module('application', ['ui.router']);
+  angular.module('application', [
+    'ui.router',
+
+    // App Specific
+    'application.routes',
+    'application.controllers'
+
+  ]);
 })();

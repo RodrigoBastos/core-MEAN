@@ -9,5 +9,5 @@ module.exports = new express.Router()
   .get('/', getHome);
 
 function getHome (req, res) {
-  res.render('home', {title:'Learning NodeJS'});
+  res.render('index', {title:'Learning NodeJS'});
 }

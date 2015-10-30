@@ -5,6 +5,6 @@
 angular.module('application.controllers', [])
 
 
-  .controller('HomeCtrl', function ($scope) {
+  .controller('InfoCtrl', function ($scope) {
     $scope.colors = ['red', 'blue', 'yellow', 'orange'];
   });

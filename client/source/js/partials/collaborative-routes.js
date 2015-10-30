@@ -2,16 +2,31 @@
  * Created by handtalk on 29/10/15.
  */
 
-angular.module('applicatio.routes', [])
-  .config(function ($stateProvider, $urlRouterProvider) {
+angular.module('application.routes', [])
+  .config(function ($stateProvider , $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/home');
+    $stateProvider
 
-    $stateProvider.
-      state('home', {
+      //┌───────────┐
+      //│ Principal │
+      //└───────────┘
+
+      // Home State
+      .state('home', {
         url: '/home',
-        templateUrl: '/home',
-        controller: 'HomeCtrl'
+        templateUrl: 'home'
       })
+
+      // Info State
+      .state('info', {
+        url: '/info',
+        templateUrl: 'info',
+        controller: 'InfoCtrl'
+      });
   })
 ;
+
+
+
+

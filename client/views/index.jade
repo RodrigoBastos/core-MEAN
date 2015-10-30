@@ -1,0 +1,23 @@
+//
+   Created by Rodrigo Bastos on 30/10/15.
+
+doctype html
+html.no-js(ng-app='application')
+  head
+
+    title #{title}
+
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    script(src='/js/collaborative.min.js')
+
+  body
+
+    ui-view
+
+    include partials/home
+    include partials/info
+
+
