@@ -17,7 +17,7 @@ gulp.task('css', function (done) {
       outputStyle: 'compressed',
       errLogToConsole: true
     }))
-    .pipe(autoprefixer({browsers: ['last 2 versions', 'ie 10']}))
+    //.pipe(autoprefixer({browsers: ['last 2 versions', 'ie 10']}))
     .pipe(rename({extname:'.min.css'}))
     .pipe(gulp.dest('./client/public/css'))
     .on('end', done)
