@@ -12,12 +12,18 @@ html.no-js(ng-app='application')
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
     link(rel='stylesheet', href='/css/handtalk.min.css')
     link(rel='stylesheet', href='/css/collaborative.min.css')
-    script(src='/js/collaborative.min.js')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
 
-  body(style='background: #d4d4d4;')
+
+    script(src='/js/collaborative.min.js')
+    script(src='https://code.jquery.com/jquery-git2.min.js')
+    script(src='http://dev.handtalk.me/static/js/unityobject.js')
+
+  body(style='background: #E6E6E6;')
 
     +topbar('userPanel')
 

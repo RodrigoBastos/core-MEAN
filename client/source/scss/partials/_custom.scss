@@ -145,4 +145,42 @@ textarea {
   padding: 30px;
   width: 100%;
   box-shadow: 0 0 30px rgba(0,0,0,0.04);
+  font-size: 18px;
+
+  .row {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    i {
+      margin-right: 15px;
+      color: #f36f22;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+
+    select {
+      width: 200px !important;
+      border-radius: 5px !important;
+      margin: auto !important;
+      height: auto !important;
+    }
+  }
 }
+
+
+.panel-main {
+  padding: 110px 40px 0 420px;
+
+}
+
+#sourceSentence {
+  color: #444;
+  font-style: normal;
+}
+
+
+
+
+

@@ -6,18 +6,50 @@ script(type='text/ng-template', id='home')
   .margin-bottom-medium
 
   .row
-    .small-8.large-8.columns
+    div.large-8.columns
 
-      section.panel-translate
+      .panel-translate.margin-bottom-small
         .row
-          .small-10.large-8.columns
+          .medium-7.large-7.columns
+
             h5 Frase:
-            h3 Meu nome é Rodrigo
-          .small-2.large-4.columns
-            h1 HUGO
-    .small-4.large-4.columns
-      section.panel-info.large-4
-        h5 INFO
+            h3#sourceSentence A casa da minha avó é amarela e tem 2 andares.
+
+            .row.large-6.columns
+              tags-input(ng-model="tags")
+                auto-complete(source="loadItems($query)")
+
+          .medium-5.large-5.columns
+            #unityPlayer
+              .missing
+                a(href='http://unity3d.com/webplayer/', title='Instalar Hand Talk!')
+                  img(alt='Instalar Hand Talk!', src='http://api.handtalk.me/imgs/tela-plugin-tradutor-sites.png', width='240', height='360')
+
+
+    .small-12.medium-10.large-4.columns
+
+      .panel-info.margin-bottom-small
+        .container
+          .row.margin-bottom-xsmall
+            i.fa.fa-globe
+            span Português (BR) ➔ Libras
+
+          .row.margin-bottom-xsmall
+            i.fa.fa-map-marker
+            select.small
+              option Geral
+              option Tradutor de Sites
+              option Aplicativo
+              option Legendas
+
+          .row.margin-bottom-xsmall
+            i.fa.fa-list-ul
+            span 1071
+
+          .row.margin-bottom-xsmall
+            i.fa.fa-trophy
+            span 98 (mês) | 320 (Total)
+
 
 
 
