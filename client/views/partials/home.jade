@@ -15,9 +15,8 @@ script(type='text/ng-template', id='home')
             h5 Frase:
             h3#sourceSentence A casa da minha avó é amarela e tem 2 andares.
 
-            .row.large-6.columns
-              tags-input(ng-model="tags")
-                auto-complete(source="loadItems($query)")
+            tags-input(ng-model='tags')
+              auto-complete(source='loadTags($query)', style='width:100% !important;')
 
           .medium-5.large-5.columns
             #unityPlayer
