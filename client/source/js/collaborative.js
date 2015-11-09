@@ -7,6 +7,8 @@
 //= include ../components/angular-ui-router/release/angular-ui-router.js
 //= include ../components/angular-foundation/mm-foundation.js
 //= include ../components/ng-tags-input/ng-tags-input.js
+//= include ../components/Chart.js/Chart.js
+//= include ../components/angular-chart.js/dist/angular-chart.js
 
 
 // App Specific
@@ -23,7 +25,8 @@
     'application.controllers',
 
     'mm.foundation',
-    'ngTagsInput'
+    'ngTagsInput',
+    'chart.js'
 
   ]);
 })();

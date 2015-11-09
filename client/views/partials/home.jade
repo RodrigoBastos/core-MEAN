@@ -3,32 +3,63 @@
 
 script(type='text/ng-template', id='home')
 
-  .margin-bottom-medium
+  .margin-bottom-small
 
   .row
-    div.large-8.columns
-
-      .panel-translate.margin-bottom-small
-        .row
-          .medium-7.large-7.columns
-
-            h5 Frase:
-            h3#sourceSentence A casa da minha avó é amarela e tem 2 andares.
-
-            tags-input(ng-model='tags')
-              auto-complete(source='loadTags($query)', style='width:100% !important;')
-
-          .medium-5.large-5.columns
-            #unityPlayer
-              .missing
-                a(href='http://unity3d.com/webplayer/', title='Instalar Hand Talk!')
-                  img(alt='Instalar Hand Talk!', src='http://api.handtalk.me/imgs/tela-plugin-tradutor-sites.png', width='240', height='360')
-
-
-    .small-12.medium-10.large-4.columns
+    .large-4.columns(style='float:right')
 
       .panel-info.margin-bottom-small
-        .container
+        .row
+          ul.medium-block-grid-2.large-block-grid-1
+            li
+              ul.small-block-grid-1.large-block-grid-1
+                li
+                  i.fa.fa-globe
+                  span Português (BR) ➔ Libras
+                li
+                  i.fa.fa-map-marker
+                  select.small
+                    option Geral
+                    option Tradutor de Sites
+                    option Aplicativo
+                    option Legendas
+                li
+                  i.fa.fa-list-ul
+                  span 1071
+
+                li
+                  i.fa.fa-trophy
+                  span 98 (mês) | 320 (Total)
+
+            li
+              ul.small-block-grid-1.large-block-grid-1
+                li
+                  img(src="/images/chart-fake.jpg")
+                li
+                  .small-4.columns(ng-class="{'awardEnable': 2 == 2} ")
+                    span.fa.fa-star.fa-3x
+                  .small-4.columns
+                    span.fa.fa-star.fa-3x
+                  .small-4.columns
+                    span.fa.fa-star.fa-3x
+                li
+                  .small-4.columns(ng-class="{'awardEnable': 2 == 1} ")
+                    span.fa.fa-star.fa-3x
+                  .small-4.columns
+                    span.fa.fa-star.fa-3x
+                  .small-4.columns
+                    span.fa.fa-star.fa-3x
+
+                li
+                  .small-4.columns(ng-class="{'awardEnable': 2 == 1} ")
+                    span.fa.fa-star.fa-3x
+                  .small-4.columns
+                    span.fa.fa-star.fa-3x
+                  .small-4.columns
+                    span.fa.fa-star.fa-3x
+
+
+        //.container
           .row.margin-bottom-xsmall
             i.fa.fa-globe
             span Português (BR) ➔ Libras
@@ -48,6 +79,47 @@ script(type='text/ng-template', id='home')
           .row.margin-bottom-xsmall
             i.fa.fa-trophy
             span 98 (mês) | 320 (Total)
+
+          .row.margin-bottom-xsmall
+            img(src="/images/chart-fake.jpg")
+
+          .row.text-center.margin-bottom-xsmall
+            .small-4.columns(ng-class="{'awardEnable': 2 == 2} ")
+              span.fa.fa-star.fa-3x
+            .small-4.columns
+              span.fa.fa-star.fa-3x
+            .small-4.columns
+              span.fa.fa-star.fa-3x
+
+          .row.text-center.margin-bottom-xsmall
+            .small-4.columns(ng-class="{'awardEnable': 2 == 1} ")
+              span.fa.fa-star.fa-3x
+            .small-4.columns
+              span.fa.fa-star.fa-3x
+            .small-4.columns
+              span.fa.fa-star.fa-3x
+
+    .large-8.columns(style='float:left')
+
+      .panel-translate.margin-bottom-small
+        .row
+          .medium-7.large-7.columns
+
+            h5 Frase:
+            h3#sourceSentence A casa da minha avó é amarela e tem 2 andares.
+
+            tags-input#tagsSigns(ng-model='tags')
+              auto-complete(source='loadTags($query)')
+
+
+          .medium-5.large-5.columns
+            #unityPlayer
+              .missing
+                a(href='http://unity3d.com/webplayer/', title='Instalar Hand Talk!')
+                  img(alt='Instalar Hand Talk!', src='http://api.handtalk.me/imgs/tela-plugin-tradutor-sites.png', width='240', height='360')
+
+
+
 
 
 

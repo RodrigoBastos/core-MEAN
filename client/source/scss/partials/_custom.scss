@@ -148,8 +148,8 @@ textarea {
   font-size: 18px;
 
   .row {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
 
     i {
       margin-right: 15px;
@@ -180,7 +180,23 @@ textarea {
   font-style: normal;
 }
 
+.divCentral{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
 
+
+.awardEnable {
+  color: #f36f22;
+}
+
+
+#tagsSigns {
+  width: auto !important;
+}
 
 
 
