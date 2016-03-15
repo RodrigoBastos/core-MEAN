@@ -2,9 +2,9 @@
  * Created by Rodrigo Bastos on 28/10/15.
  */
 
-var logger  = require('./server/utils/logger');
-var config  = require('./server/config');
-var cluster = require('cluster');
+const logger  = require('./server/utils/logger');
+const config  = require('./server/config');
+const cluster = require('cluster');
 
 if (cluster.isMaster) {
   for (var i = 0; i < config.concurrency; i += 1) {
@@ -20,6 +20,7 @@ if (cluster.isMaster) {
 
   var App = require('./app');
 
+  //Instance Express
   var app = new App();
   app.listen(app.get('port'));
 

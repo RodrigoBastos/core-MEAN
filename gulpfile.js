@@ -1,5 +1,5 @@
 /**
- * Created by handtalk on 29/10/15.
+ * Created by rodrigo on 29/10/15.
  */
 
 var gulp          = require('gulp');
@@ -10,6 +10,7 @@ var include       = require('gulp-include');
 var autoprefixer  = require('gulp-autoprefixer');
 
 
+//Task CSS
 gulp.task('css', function (done) {
   gulp.src('./client/source/scss/*.scss')
     .pipe(sass({
@@ -24,6 +25,7 @@ gulp.task('css', function (done) {
   ;
 });
 
+//Task Javascript
 gulp.task('js', function (done) {
   gulp.src('./client/source/js/*.js')
     .pipe(include())

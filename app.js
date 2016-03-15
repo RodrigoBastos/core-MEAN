@@ -2,11 +2,11 @@
  * Created by Rodrigo Bastos on 28/10/15.
  */
 
-var path        = require('path');
-var express     = require('express');
-var mainRoutes  = require('./server/routes/mainRoutes.js');
+const path        = require('path');
+const express     = require('express');
+const mainRoutes  = require('./server/routes/mainRoutes.js');
 
-
+//Express App
 function App () {
 
   return express()
