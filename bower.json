@@ -18,8 +18,8 @@
     "angular-ui-router": "~0.2.15",
     "angular": "~1.4.7",
     "angular-foundation": "~0.8.0",
-    "ng-tags-input": "~3.0.0",
     "Chart.js": "~1.0.2",
-    "angular-chart.js": "~0.8.5"
+    "angular-chart.js": "~0.8.5",
+    "foundation-sites": "^6.2.0"
   }
 }
