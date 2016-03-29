@@ -5,7 +5,10 @@
 //AngularJS
 //= include ../components/angular/angular.js
 //= include ../components/angular-ui-router/release/angular-ui-router.js
-//= include ../components/angular-foundation/mm-foundation-tpls.js
+
+//= include ../components/angular-animate/angular-animate.min.js
+//= include ../components/angular-aria/angular-aria.min.js
+//= include ../components/angular-material/angular-material.min.js
 
 
 //App Specific
@@ -13,9 +16,8 @@
 
 (function(){
     angular.module('app', [
-        'mm.foundation',
         'ui.router',
-
+        'ngMaterial',
         'app.dashboard'
     ])
 })();

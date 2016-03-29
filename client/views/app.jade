@@ -1,16 +1,35 @@
-//
-   Created by Rodrigo Bastos on 14/03/16.
+//Created by Rodrigo Bastos on 14/03/16.
 doctype html
 
 html
-   head
-      title= title
+  head
+    title= title
 
-      link(href='/css/app.min.css')
+    link(rel="stylesheet" href='/css/app.min.css')
 
-      script(src='/js/app.min.js')
+    script(src='/js/app.min.js')
 
-   body(ng-app='app', ng-controller='dashboardCtrl')
-      h2 CORE MEAN!
+  body(ng-app='app', ng-controller='dashboardCtrl', layout='column')
 
-      button.button(type='button') {{test}}
+    md-toolbar(layout='row')
+      h1 CORE MEAN!
+
+    div.flex(layout='row')
+
+      md-sidenav.md-whiteframe-z2(md-is-locked-open='true')
+        md-list
+          md-list-item
+            md-button
+              md-icon.avatar(md-svg-src='/images/avatar/avatar-4.svg')
+              |  Malotty
+          md-list-item
+            md-button
+              md-icon.avatar(md-svg-src='/images/avatar/avatar-1.svg')
+              |  Logitech
+
+      md-content.flex#content
+        md-icon(md-svg-src='/images/avatar/avatar-4.svg')
+        h2 Malotty
+        p I love fotball
+
+
